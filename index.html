@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
 </head>
 <body>
-    <h1>Tic</h1>
+
+        <main class="flex flex-col min-h-screen justify-center items-center">
+            <div class="game_container w-96">
+                <header class="header flex flex-col gap-6 ">
+                    <div class="players flex items-center justify-between">
+
+                        <div class="player_one flex flex-col gap-1">
+                            <h2 class="player_name text-xl font-medium ">Player One Name</h2>
+                            <h3 class="player_marker">Marker: X</h3>
+                            <h4 class="player_score">Score: 0</h4>
+
+                        </div>
+                        <div class="player_two flex flex-col gap-1">
+                            <h2 class="player_name text-xl font-medium ">Player Two Name</h2>
+                            <h3 class="player_marker">Marker: O</h3>
+                            <h4 class="player_score">Score: 0</h4>
+                        </div>
+                    </div>
+                    <div class="game_btns flex items-center justify-between">
+                        <button class="play_btn py-2 px-6 bg-green-600 text-green-50 rounded hover:bg-green-500 transition-all duration-100 ease-in-out">Play Game</button>
+                        <button class="reset_btn py-2 px-6 bg-red-600 text-red-50 rounded hover:bg-red-500 transition-all duration-100 ease-in-out">Reset Game</button>
+                    </div>
+                </header>
+                <div class="game_body w-96 h-96 mt-4">
+                    <div class="game_grid bg-slate-500 w-full h-full grid grid-cols-3 grid-rows-3">
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
     <script src="script.js"></script>
 </body>
 </html>
