@@ -17,13 +17,13 @@
                         <div class="player_one flex flex-col gap-1">
                             <h2 class="player_name text-xl font-medium ">Player One Name</h2>
                             <h3 class="player_marker">Marker: X</h3>
-                            <h4 class="player_score">Score: 0</h4>
+                            <h4 class="player_score">Score: <span class="player_one_score">0</span></h4>
 
                         </div>
                         <div class="player_two flex flex-col gap-1">
                             <h2 class="player_name text-xl font-medium ">Player Two Name</h2>
                             <h3 class="player_marker">Marker: O</h3>
-                            <h4 class="player_score">Score: 0</h4>
+                            <h4 class="player_score">Score: <span class="player_two_score">0</span></h4>
                         </div>
                     </div>
                     <div class="game_btns flex items-center justify-between">
@@ -33,15 +33,15 @@
                 </header>
                 <div class="game_body w-96 h-96 mt-4">
                     <div class="game_grid bg-slate-500 w-full h-full grid grid-cols-3 grid-rows-3">
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
-                            <div class="box border flex flex-col items-center justify-center"><span class="marked text-9xl">X</span></div>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="1"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="2"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="3"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="4"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="5"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="6"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="7"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="8"></button>
+                            <button class="box select-none disabled:cursor-not-allowed hover:bg-slate-600 border flex flex-col items-center justify-center marked text-9xl cursor-pointer" data-key="9"></button>
                     </div>
                 </div>
             </div>
